@@ -6,18 +6,18 @@ set background=dark
 " This means not comptable with Vi
 set nocompatible
 filetype plugin on
-" change 4 to whatever tab length you prefer. set smarttab if you want to use
+" change 2 to whatever tab length you prefer. set smarttab if you want to use
 " spaces instead of tabs
 set tabstop=2
 set shiftwidth=2
 set smartindent
 set smarttab
-" This makes it htat you can use your mouse for scrolling, resizing splits,
+" This makes it that you can use your mouse for scrolling, resizing splits,
 " switching between splits etc.
 set mouse=a
 set nu
 set nowrap
-" Turns of highlighting after a seach is done.
+" Turns off highlighting after a seach is done.
 set nohlsearch
 set noerrorbells
 " True color
@@ -31,18 +31,17 @@ set hidden
 set incsearch
 " Only does case sensitive search with a capital is there in a search
 set smartcase
-" Case insensitive serach
+" Case insensitive search
 set ignorecase
-" Vim I don't want you creating files on my harddrive without my permission
-" no matter your intent
+" Don't create files
 set noswapfile
 set nobackup
 set undodir=~/.vim/undodir
 set undofile
 set scrolloff=8
 set encoding=UTF-8
-" Set the leader key to space, makes some shortcuts really easily, set this
-" whatever key you want to the "\" key by default
+
+" Set the leader key
 let mapleader = ","
 " Turns off line numbers when you call the :term command to use a terminal
 " inside of neovim
@@ -50,6 +49,7 @@ autocmd TermOpen * setlocal nonumber norelativenumber
 
 let g:floaterm_keymap_toggle = '<leader>t'
 
+" Better Gruvbox theming with Alacritty
 let g:gruvbox_material_background='hard'
 let g:gruvbox_material_palette='original'
 
